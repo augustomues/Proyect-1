@@ -4,16 +4,27 @@
 
 ## Index
 
-### 1. Hypothesis/Goal
+### 1. Repo Content
 
-### 2. Visualizations
+### 2. Hypothesis/Goal
 
-### 3. Conclutions
+### 3. Visualizations
+
+### 4. Conclutions
 
 <br>
+
+## 1. Repo Content
+
+1. README.md: Current file. Is the report containing all the analysis anc conlusions
+2. clean.ipynb: Initial exploration and clean of the data.
+3. analysis.ipynb: Data Visualizations
+4. encapsulations.py: Python script containing functions that encapsulates the code from clean.ipynb and from analysis.ipynb
+5. analysis (with func).ipynb: Same as analysis.ipynb, but now calling the functions created on encapsulation.py
+
 <br>
 
-## 1. Hypothesis/Goal:
+## 2. Hypothesis/Goal:
 
 My goal is to get insightful information from a really mesy DataFrame related to Shark Attacks. This DataFrame is extracted from Kaggle: https://www.kaggle.com/datasets/teajay/global-shark-attacks
 
@@ -33,7 +44,7 @@ I would like to see the evolution of the shark attack on the last decades, tryin
 
 <br>
 
-## 2. Analysis and Visualizations
+## 3. Analysis and Visualizations
 
 After a deep cleaning done on the DataFrame, which can be found on the clean.ipynb file (functions encapsulated on the encapsulation.py file) we can quickly see that in the last 2 decades there has been an important spike on the shark attacks reported:
 
@@ -44,7 +55,7 @@ As per the goal enaunced above, we will try to explain why such spike have happe
 <br>
 <br>
 
-### <ins>**2.1. Countries**
+### <ins>**3.1. Countries**
 
 Just considering the shark attacks reports done during the last 2 decades, and plotting the top 10 countries (accountbale for the 80% ot the reports done), we can see that USA is bar far the country that most reports has have, preciding by AUSTRALIA and SOUTH AFRICA:
 
@@ -54,7 +65,7 @@ In fact, these 3 countries are accounting for the 70% of the reports done on the
 <br>
 <br>
 
-### <ins>**2.2. Fatality**
+### <ins>**3.2. Fatality**
 
 Taking the data from 1900 till the present, as we can see on the chart below, the fatal shark accidents reports Decade over Decade have been considerably stable. We can see that clearly the spike of the last 2 decades is coming from non fatal shark attacks reports.
 ![Alt text](Images/2.%20Shark%20Attack%20Ev.%20per%20Fatality.png)
@@ -67,7 +78,7 @@ This is why we will be **focusing in USA and AUSTRALIA**.
 <br>
 <br>
 
-### <ins>**2.3. Moment of Day**
+### <ins>**3.3. Moment of Day**
 First of all, would be interesting to see how is the distribution of the shark attacks reports on the different moment of the days on the top 3 countries. We can clearly see that the afternoon (and also the morning) is when more accidents happen (obviously because is when most of the people are doing activities on the sea):
 
 ![Alt text](Images/7.%20Shark%20Attacks%20in%20top%203%20countries%20per%20Moment%20of%20Day.png)
@@ -79,7 +90,7 @@ See the evolution of this during the last decades, sadly we cannot find anything
 <br>
 <br>
 
-### <ins>**2.4. Season**
+### <ins>**3.4. Season**
 
 Similar to the Moment of the Day view, there is no much that we can say regarding the impact of the season in the evoultion of the sharks attack reports in USA and AUSTRALIA. The only thing that would be worth mentioning is that the different seasons in each country follows the same evolution as the overall evolution in the country. To see that, we should compare the below image with the one already showed in Fatality section.
 
@@ -88,7 +99,7 @@ Similar to the Moment of the Day view, there is no much that we can say regardin
 <br>
 <br>
 
-### <ins>**2.5. Location**
+### <ins>**3.5. Location**
 Only in USA was possible to spot several repetitions in terms of locations of the different reports. As we can see on the chart below, in the 2000 decade, there was an spike of shark attack reports, helping to explaing a little bit the overall spike of the shark attacks reports happened on that decade.
 
 ![Alt text](Images/11.%20Skark%20Attacks%20in%20USA%20per%20Location.png)
@@ -96,7 +107,7 @@ Only in USA was possible to spot several repetitions in terms of locations of th
 <br>
 <br>
 
-### <ins>**2.6. Investigator/Source**
+### <ins>**3.6. Investigator/Source**
 After a deep exploration on this field, it was found that there were a common laboratory or group: GSAF (GSAF stands for 'Global Shark Attacks File': sharkattackfile.net/index.htm). That is why it was interesting to see if this specific group has started to report more and more accidents. And the answer? Absolutely:
 
 ![Alt text](Images/5.%20Shark%20Attacks%20reports%20Ev.%20done%20by%20GSAF.png)
@@ -108,7 +119,7 @@ And guess what! Which is the correspondent country responsable for that spike? I
 <br>
 <br>
 
-## Conclusions
+## 4. Conclusions
 
 After the deep exploration and anlysis made, we are able to arrive to the following conclusions:
 
